@@ -9,11 +9,9 @@ plus a launcher using native Digeo/ANN tools instead of obsolete i386 helpers.
 These are **native CPU portability fixes, not a MicMac Metal/GPU port**.
 
 See [the headless ARM64 build instructions and compiled regression tests](tools/macos/README.md).
-Native matching, Tapas-to-Apero resource loading, PoissonRecon and SurfaceTrimmer
-were exercised on M1. The twelve-photo Dragon orientation comparison failed
-initialization; no successful Dragon STL or reconstruction-quality improvement
-is claimed. Upstream resources and license notices are preserved; no binaries
-or datasets are included.
+The launcher preserves normal MicMac resource lookup and explicit detector
+and matcher overrides. Upstream resources and license notices are preserved;
+no binaries or datasets are included.
 
 ---
 
