@@ -393,7 +393,8 @@ BufferImage<T>& BufferImage<T>::operator -= (BufferImage<T> const &img)
     int NC = _size.first;
     int NL = _size.second;
     int NC2,NL2;
-    img.Size(NC2,NL2);
+    NC2 = img.numCols();
+    NL2 = img.numLines();
     int nbBands2 = img.numBands();
     T* ptrLine = _data;
     const T* ptrLine2 = img.getPtr();
@@ -434,7 +435,8 @@ BufferImage<T>& BufferImage<T>::operator *= (BufferImage<T> const &img)
     int NC = _size.first;
     int NL = _size.second;
     int NC2,NL2;
-    img.Size(NC2,NL2);
+    NC2 = img.numCols();
+    NL2 = img.numLines();
     int nbBands2 = img.numBands();
     T* ptrLine = _data;
     const T* ptrLine2 = img.getPtr();
