@@ -1,5 +1,22 @@
 # MicMac
 
+## Crisp3DS Apple Silicon branch (`crisp3ds/m1-compatibility`)
+
+This fork branch starts at `f8fe432101fb1852f8c4d8546504a5278f6ef57f`.
+It contains the tested AppleClang compatibility fixes for `BufferImage`
+dimension accessors and the bundled Poisson subtraction/reset templates,
+plus a launcher using native Digeo/ANN tools instead of obsolete i386 helpers.
+These are **native CPU portability fixes, not a MicMac Metal/GPU port**.
+
+See [the headless ARM64 build instructions and compiled regression tests](tools/macos/README.md).
+Native matching, Tapas-to-Apero resource loading, PoissonRecon and SurfaceTrimmer
+were exercised on M1. The twelve-photo Dragon orientation comparison failed
+initialization; no successful Dragon STL or reconstruction-quality improvement
+is claimed. Upstream resources and license notices are preserved; no binaries
+or datasets are included.
+
+---
+
 - For **MicMac v2 (MMVII)** click **[HERE](https://github.com/micmac-V2/MMVII)**. 
 
 **Table of Contents**
