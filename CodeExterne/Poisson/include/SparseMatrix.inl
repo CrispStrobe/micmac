@@ -195,7 +195,7 @@ void SparseMatrix< T >::SetRowSize( int row , int count )
 template<class T>
 void SparseMatrix<T>::SetZero()
 {
-	Resize(this->m_N, this->m_M);
+	Resize(rows);
 }
 
 template<class T>
